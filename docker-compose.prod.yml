@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  backend:
+    image: ajaysingh33/shoppable-tv-backend:latest
+    ports:
+      - "4000:4000"
+  frontend:
+    image: ajaysingh33/shoppable-tv-frontend:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_BASE=http://backend:4000
+    depends_on:
+      - backend

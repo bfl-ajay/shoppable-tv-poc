@@ -1,0 +1,24 @@
+name: Deploy Latest Build from Docker Hub to Local Docker
+
+on:
+  workflow_dispatch:    # Manually trigger from GitHub UI
+  push:
+    branches: [ main ]  # Or set your deploy trigger branch
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Pull backend image
+        run: docker pull ajaysingh33/shoppable-tv-backend:latest
+
+      - name: Pull frontend image
+        run: docker pull ajaysingh33/shoppable-tv-frontend:latest
+
+      - name: Deploy using docker-compose
+        run: |
+          docker compose -f docker-compose.prod.yml up -d
