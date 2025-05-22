@@ -8,29 +8,29 @@ on:
 
 jobs:
   backend:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: backend
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+  runs-on: ubuntu-latest # Use the latest Ubuntu runner
+  defaults:
+    run:
+      working-directory: backend # All run steps will execute in the 'backend' directory
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3 # Fetch the code from the repository
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
+    - name: Set up Node.js
+      uses: actions/setup-node@v4 # Set up Node.js for the workflow
+      with:
+        node-version: '18' # Use Node.js version 18
 
-      - name: Install dependencies
-        run: npm install
+    - name: Install dependencies
+      run: npm install # Install npm dependencies in the backend directory
 
-      - name: Run tests
-        run: echo "No tests implemented"
-        # If you do not have tests yet, you can use: run: echo "No tests implemented"
+    - name: Run tests
+      run: echo "No tests implemented" # Placeholder for test step; replace with your test command when available
+      # If you do not have tests yet, you can use: run: echo "No tests implemented"
 
-      - name: Build project
-        run: echo "No build needed"
-        # If your backend does not require build step, you can use: run: echo "No build needed"
+    - name: Build project
+      run: echo "No build needed" # Placeholder for build step; replace with your build command if needed
+      # If your backend does not require build step, you can use: run: echo "No build needed"
 
   frontend:
     runs-on: ubuntu-latest
