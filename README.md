@@ -1,5 +1,6 @@
 [![CodeQL Advanced](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/codeql.yml/badge.svg)](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/codeql.yml)  [![Node.js Build and Test](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/node.js.yml/badge.svg)](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/node.js.yml)  [![Build and Push Docker Images](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/docker-push.yml/badge.svg)](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/docker-push.yml)  ![Node.js](https://img.shields.io/badge/node.js-18.x-green?logo=node.js)  ![React](https://img.shields.io/badge/React-18.x-blue?logo=react)
-![Last Commit](https://img.shields.io/github/last-commit/bfl-ajay/shoppable-tv-poc)
+![Last Commit](https://img.shields.io/github/last-commit/bfl-ajay/shoppable-tv-poc) [![Docker Pulls](https://img.shields.io/docker/pulls/ajaysingh33/shoppable-tv-backend)](https://hub.docker.com/r/ajaysingh33/shoppable-tv-backend)
+
 
 # Shoppable TV – In-House Solution Blueprint
 
