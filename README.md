@@ -1,3 +1,5 @@
+[![CodeQL Advanced](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/codeql.yml/badge.svg)](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/codeql.yml)
+
 # Shoppable TV – In-House Solution Blueprint
 
 ## 1. Solution Overview
