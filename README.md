@@ -41,7 +41,7 @@ Overlay interactive shoppable elements on live or recorded TV/video streams, man
 ---
 
 ## 3. Solution Architecture (High-Level)
-
+```mermaid
 +-------------------+
 |  TV/OTT Platform  | <--- Video stream + Shoppable overlay API
 +-------------------+
