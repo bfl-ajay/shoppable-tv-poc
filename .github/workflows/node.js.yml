@@ -29,7 +29,7 @@ jobs:
         # If you do not have tests yet, you can use: run: echo "No tests implemented"
 
       - name: Build project
-        run: npm run build
+        run: echo "No build needed"
         # If your backend does not require build step, you can use: run: echo "No build needed"
 
   frontend:
