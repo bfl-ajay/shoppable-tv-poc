@@ -44,12 +44,12 @@ Overlay interactive shoppable elements on live or recorded TV/video streams, man
 ```mermaid
 
 flowchart TD
-  TV[TV/OTT Platform<br/>(Video stream + Shoppable overlay API)]
-  SDK[Interactive Video SDK<br/>(Web, TV, Mobile)]
-  Product[Product Data API<br/>(Catalog, Inventory)]
-  Commerce[Commerce Engine<br/>(Cart, Payments, OMS)]
-  Analytics[Analytics & Reporting DB]
-  CMS[Brand/Producer CMS]
+  TV["TV/OTT Platform\n(Video stream + Shoppable overlay API)"]
+  SDK["Interactive Video SDK\n(Web, TV, Mobile)"]
+  Product["Product Data API\n(Catalog, Inventory)"]
+  Commerce["Commerce Engine\n(Cart, Payments, OMS)"]
+  Analytics["Analytics & Reporting DB"]
+  CMS["Brand/Producer CMS"]
 
   TV -->|Video stream + Shoppable overlay API| SDK
   SDK <--> Product
@@ -57,7 +57,6 @@ flowchart TD
   Product --> Commerce
   Commerce --> Analytics
   Analytics --> CMS
-
 
 ```
 ---
