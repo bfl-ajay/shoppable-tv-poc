@@ -1,4 +1,4 @@
-[![CodeQL Advanced](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/codeql.yml/badge.svg)](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/codeql.yml)  [![Node.js Build and Test](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/node.js.yml/badge.svg)](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/node.js.yml)
+[![CodeQL Advanced](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/codeql.yml/badge.svg)](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/codeql.yml)  [![Node.js Build and Test](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/node.js.yml/badge.svg)](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/node.js.yml)  [![Build and Push Docker Images](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/docker-push.yml/badge.svg)](https://github.com/bfl-ajay/shoppable-tv-poc/actions/workflows/docker-push.yml)
 
 # Shoppable TV – In-House Solution Blueprint
 
@@ -29,6 +29,8 @@ Overlay interactive shoppable elements on live or recorded TV/video streams, man
 
 ### D. User Interaction & Engagement
 - **Authentication:** Optional user login or guest checkout.
+
+# Shoppable TV – In-House Solution Blueprint
 - **Multi-Device Flow:** QR codes for instant mobile checkout or casting/sharing cart to a mobile device.
 - **Personalization:** Recommendations based on user profile, content context, and purchase history.
 
