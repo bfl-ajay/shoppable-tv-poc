@@ -1,0 +1,57 @@
+name: Node.js Build and Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: echo "No tests implemented"
+        # If you do not have tests yet, you can use: run: echo "No tests implemented"
+
+      - name: Build project
+        run: npm run build
+        # If your backend does not require build step, you can use: run: echo "No build needed"
+
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: echo "No tests implemented"
+        # If you do not have tests yet, you can use: run: echo "No tests implemented"
+
+      - name: Build project
+        run: npm run build
