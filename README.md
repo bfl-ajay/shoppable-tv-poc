@@ -42,33 +42,24 @@ Overlay interactive shoppable elements on live or recorded TV/video streams, man
 
 ## 3. Solution Architecture (High-Level)
 ```mermaid
-+-------------------+
-|  TV/OTT Platform  | <--- Video stream + Shoppable overlay API
-+-------------------+
-         |
-         v
-+-----------------------+      +-----------------------+
-| Interactive Video SDK |<---->|  Product Data API     |
-|  (Web, TV, Mobile)    |      | (Catalog, Inventory)  |
-+-----------------------+      +-----------------------+
-         |                                 |
-         |                                 v
-         |                    +--------------------------+
-         +------------------->|    Commerce Engine       |
-                              |  (Cart, Payments, OMS)   |
-                              +--------------------------+
-                                         |
-                                         v
-                           +-------------------------------+
-                           |   Analytics & Reporting DB     |
-                           +-------------------------------+
-                                         |
-                                         v
-                           +-------------------------------+
-                           |       Brand/Producer CMS      |
-                           +-------------------------------+
+
+flowchart TD
+  TV[TV/OTT Platform<br/>(Video stream + Shoppable overlay API)]
+  SDK[Interactive Video SDK<br/>(Web, TV, Mobile)]
+  Product[Product Data API<br/>(Catalog, Inventory)]
+  Commerce[Commerce Engine<br/>(Cart, Payments, OMS)]
+  Analytics[Analytics & Reporting DB]
+  CMS[Brand/Producer CMS]
+
+  TV -->|Video stream + Shoppable overlay API| SDK
+  SDK <--> Product
+  SDK --> Commerce
+  Product --> Commerce
+  Commerce --> Analytics
+  Analytics --> CMS
 
 
+```
 ---
 
 ## 4. Key Workflows
